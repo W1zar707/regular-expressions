@@ -13,8 +13,8 @@ namespace ConsoleApp8
         // \w - это любая буква или цифра
         // \. - что угодно
         // {} - количество раз
-        static string number = "Легче позвонить чем у кого-то занимать: 8-800-555-35-35";
-        static string pattern = @"\d{1}-\d{3}-\d{3}-\d{2}-\d{2}";
+        static string number = "Легче позвонить чем у кого-то занимать: +7 (917) 084-39-93";
+        static string pattern = @"\+\d{1} \(\d{3}\) \d{3}-\d{2}-\d{2}";
         public static void match_string (string input, string match)
         {
             Match m = Regex.Match(input, match);
